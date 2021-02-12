@@ -237,31 +237,28 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Din email"
-                                                                     required>
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Ditt namn"
+                                                                 required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Ditt namn"
-                                                                 required>
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Din email"
+                                                                     required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
+                                <i class="fa fa-phone"></i><input name="telephone" class=""
+                                                                  placeholder="Telefonnummer">
+                            </div>
+                            <div class="form-input-group">
                                 <i class="fa fa-cutlery"></i><input name="specialkost" class=""
                                                                   placeholder="Specialkost">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-bed"></i>
-                                <input type="checkbox" name="boende" id="boende" class="">
-                                <label for="boende">Behöver hjälp med boende</label>
                             </div>
                         </div>
                     </div>
@@ -269,8 +266,8 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Medföljande"
+                                                                  max="10"
+                                                                  placeholder="Antal barn"
                                                                   required>
                             </div>
                         </div>
@@ -283,6 +280,10 @@
                             </div>
                         </div>
                     </div>
+                    <input type="checkbox" name="boende" id="boende" class="">
+                    <label for="boende">Jag vill ha hjälp att hitta boende</label>
+                    <input type="checkbox" name="sammakning" id="boende" class="">
+                    <label for="sammakning">Jag vill ha hjälp med sammåkning</label>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
