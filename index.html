@@ -238,14 +238,14 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Ditt namn"
+                                                                 placeholder="Namn på vuxna i sällskapet"
                                                                  required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Din email"
+                                                                     placeholder="Email"
                                                                      required>
                             </div>
                         </div>
@@ -253,19 +253,19 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-phone"></i><input name="telephone" class=""
-                                                                  placeholder="Telefonnummer">
+                                <i class="fa fa-phone" style="font-size: 14px;position: absolute;top: 50%;transform: translateY(-50%);margin-left: 20px;"></i>
+                                <input name="telefon" class="" placeholder="Telefonnummer">
                             </div>
                             <div class="form-input-group">
-                                <i class="fa fa-cutlery"></i><input name="specialkost" class=""
-                                                                  placeholder="Specialkost">
+                                <i class="fa fa-cutlery" style="font-size: 14px;position: absolute;top: 50%;transform: translateY(-50%);margin-left: 20px;"></i>
+                                <input name="specialkost" class="" placeholder="Specialkost">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                <i class="fa fa-users"></i><input type="number" name="barn" class="" value="0" min="0"
                                                                   max="10"
                                                                   placeholder="Antal barn"
                                                                   required>
@@ -275,15 +275,19 @@
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
-                                                                placeholder="Kod"
+                                                                placeholder="Lösenord"
                                                                 required>
                             </div>
                         </div>
                     </div>
-                    <input type="checkbox" name="boende" id="boende" class="">
-                    <label for="boende">Jag vill ha hjälp att hitta boende</label>
-                    <input type="checkbox" name="sammakning" id="boende" class="">
-                    <label for="sammakning">Jag vill ha hjälp med sammåkning</label>
+                    <div>
+                        <input type="checkbox" name="boende" id="boende" class="">
+                        <label for="boende">Jag vill ha hjälp att hitta boende</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sammakning" id="boende" class="">
+                        <label for="sammakning">Jag vill ha hjälp med sammåkning</label>
+                    </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
