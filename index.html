@@ -14,7 +14,7 @@
     <meta name="description" content="Vi ska bjuda in er till den stora dagen.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="AJoakim och Agnes ska ha bröllop!">
+    <meta property="og:title" content="Joakim och Agnes ska ha bröllop!">
     <meta property="og:description" content="Vi ska bjuda in er till den stora dagen.">
     <meta property="og:image" content="http://ja2021.se/IMG_20190418_201502.jpg">
     <meta property="og:type" content="website">
@@ -181,9 +181,9 @@
         <h3>Hitta till festen</h3>
         <p>Det är enklare än man kan tro!</p>
     </div>
-    <div id="map-canvas" style="background-image:url(img/location_background.jpg);background-size: cover;"></div>
+    <div id="map-canvas" style="background-image:url(img/location_background.jpg);background-size: cover;height:700px"></div>
     
-    <div id="map-content-wrapper" class="container pointer-events-none">
+    <div id="map-content-wrapper" class="container pointer-events-none" style="margin-top:-770px;">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
                 <div class="text-center">
@@ -196,21 +196,21 @@
                         <div class="col-md-6">
                             <h5>Ängelsbäcks strand</h5>
                             <p>Svanstigen 3, 269 92 Båstad</p>
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Google maps</a>
                         </div>
                         <div class="col-md-6">
                             <h5>Väghjälp</h5>
                             <p>Ifall man har svårt att hitta fram kan man fråga Fredrik af Sandeberg om väghjälp</p>
                             <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+46 70 281 60 38</a></p>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-6">
                             <h5>Västra Karups Bygdegård</h5>
                             <p>Glimmingevägen 64, 269 74 Västra Karup</p>
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Google maps</a>
                         </div>
                         <div class="col-md-6">
                             <h5>Närmsta tågstation</h5>
-                            <p>Närmasta tågstation är <b>Förslöv</b> station (5 minuter med bil från ceremonin), men fler tåg stannar i <b>Båstad</b> och <b>Ängelholm</b> (20 minuter med bil från ceremonin).</p>
+                            <p>Närmasta tågstation är <b>Förslövs</b> station (5 minuter med bil från ceremonin), men fler tåg stannar i <b>Båstad</b> och <b>Ängelholm</b> (20 minuter med bil från ceremonin).</p>
                         </div>
                     </div>
                 </div>
@@ -240,6 +240,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>Anmälan</h3>
+                <p>Skicka in en anmälan per vuxen i sällskapet. Barn behöver bara anmälas med en av personerna i sällskapet. Ifall specialkosten gäller barn, var god skriv det.</p>
                 <p>Sista datum att anmäla sig är 6:e juni.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
@@ -247,15 +248,15 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Namn på vuxna i sällskapet"
+                                <i class="fa fa-user"></i><input name="namn" class=""
+                                                                 placeholder="Namn"
                                                                  required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Email"
+                                <i class="fa fa-envelope"></i><input type="email" name="epost" class=""
+                                                                     placeholder="E-post"
                                                                      required>
                             </div>
                         </div>
@@ -294,10 +295,6 @@
                     <div>
                         <input type="checkbox" name="boende" id="boende" class="">
                         <label for="boende">Jag vill ha brunch på söndagen</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="sammakning" id="boende" class="">
-                        <label for="sammakning">Jag vill samåka med någon</label>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
