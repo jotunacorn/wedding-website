@@ -113,7 +113,12 @@
                 <div class="wp4">
                     <h5>Bygdegårds party <span class="time">17:00</span></h5>
                     <p>Afthe the ceremony and photographs we'll head on to Västra Karups Bygdegård. At the bygdegård we'll serve a buffet and have dinner together.
-                        Vegitarian/Vegan options will be available, but please note in your RSVP if you have any other dietary restrictions.</p>
+                        Vegitarian/Vegan options will be available, but please note in your RSVP if you have any other dietary restrictions.
+                    </p>
+                    <p>
+                        If you like to perform something during the dinner (like a speech, dance, juggling etc.) then we would like for you to sign up to toastmaster@ja2021.se.
+                        Please mention roughly what you're going to do, and an approximate duration.
+                    </p>
                 </div>
                 <div class="wp6">
                     <h5>Dancefloor <span class="time">22:00</span></h5>
@@ -168,36 +173,41 @@
     <div class="text-center">
         <h3>Location</h3>
     </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
+    <div id="map-canvas" style="background-image:url(img/location_background.jpg);background-size: cover;height:800px"></div>
+    
+    <div id="map-content-wrapper" class="container pointer-events-none" style="margin-top:-830px;margin-bottom: 90px;">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
                 <div class="text-center">
                     <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show more
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
                     </div>
                 </div>
                 <div id="map-content" class="pointer-events-auto">
                     <div class="row">
                         <div class="col-md-6">
-                            <h5>Ängelsbäcks strand</h5>
+                            <h5>Ängelsbäcksstrand</h5>
                             <p>Svanstigen 3, 269 92 Båstad</p>
+                            <a class="btn btn-accent btn-small" href="https://goo.gl/maps/NLKjddkWEzAeLoxx9"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
                         </div>
                         <div class="col-md-6">
-                            <h5>Helene</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+46 70 532 94 48</a></p>
+                            <h5>Västra Karups Bygdegård</h5>
+                            <p>Glimmingevägen 64, 269 74 Västra Karup</p>
+                            <a class="btn btn-accent btn-small" href="https://goo.gl/maps/ZJU5sqnp7DtsWDep7"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <h5>Västra Karups Byggdegård</h5>
-                            <p>Glimmingevägen 64, 269 74 Västra Karup</p>
+                            <h5>Local guide</h5>
+                            <p>If you're having trouble with finding the location, please contact <b>Fredrik af Sandeberg</b><br>
+                                <i class="fa fa-mobile"></i> <a href="tel://+46702816038">+46 70 281 60 38</a>
+                                <br>
+                                <a href="mailto:fredrik@afsandeberg.se">fredrik@afsandeberg.se</a>
+                            </p>
                         </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
+                        <div class="col-md-6">
+                            <h5>Closest train station</h5>
+                            <p>The closest station is <b>Förslövs station</b> (10 minutes by car from the ceremony), but more trains stop at <b>Båstad</b> and <b>Ängelholm</b> (30 minutes by car from the ceremony).</p>
                         </div>
                     </div>
                 </div>
@@ -215,7 +225,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <div class="section-padding">
-                        <h3>Tackar!</h3>
+                        <h3>Thanks!</h3>
                         <p>You should have received a confirmation. We'll see you on the big day!</p>
                     </div>
                 </div>
@@ -227,22 +237,23 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>RSVP</h3>
-                <p>Last day to RSVP is the 6th of June.</p>
+                <p>Please send in one form per adult in the party. Children does only need to be mentionend for one of the adults. I.e. if you're two adults and one child, you would post as two people, with one having a child. Please mention if the dietary restrictions is for an adult or a child.</p>
+                <p>Sista datum att anmäla sig är 6:e juni.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Name of adults in the party"
+                                <i class="fa fa-user"></i><input name="namn" class=""
+                                                                 placeholder="Name"
                                                                  required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Email"
+                                <i class="fa fa-envelope"></i><input type="email" name="epost" class=""
+                                                                     placeholder="E-mail"
                                                                      required>
                             </div>
                         </div>
@@ -257,7 +268,7 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-cutlery" style="font-size: 14px;position: absolute;top: 50%;transform: translateY(-50%);margin-left: 20px;"></i>
-                                <input name="specialkost" class="" placeholder="Dietary restrictions">
+                                <input name="specialkost" class="" placeholder="Diet">
                             </div>
                         </div>
                     </div>
@@ -266,48 +277,84 @@
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="barn" class="" min="0"
                                                                   max="10"
-                                                                  placeholder="Children">
+                                                                  placeholder="Number of kids">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
-                                                                placeholder="Code"
+                                                                placeholder="Password"
                                                                 required>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <input type="checkbox" name="boende" id="boende" class="">
-                        <label for="boende">I need help finding somewhere to stay</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="sammakning" id="boende" class="">
-                        <label for="sammakning">I would like help with transport to/from the wedding.</label>
+                        <input type="checkbox" name="brunch" id="brunch" class="">
+                        <label for="brunch">I want brunch on sunday</label>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        RSVP me!
+                        Submit
                     </button>
                 </form>
             </div>
         </div>
     </div>
 </section>
-
+<section class="events section-padding" id="boende">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Accommodations</h3>
+                <p>
+                    At the bjäre peninsula theres several places to stay, we would like it if the guests can arrange a place to sleep by themselves. 
+                    If this is hard, or if you got any other questions (like if you're traveling by yourself and would like someone to share a room with) feel free to contact Oscar Nyh at <i class="fa fa-mobile"></i> <a href="tel://+46708684492">+46 70 868 44 92</a>, <a href="mailto:oscar@nyh.se">oscar@nyh.se</a>.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+                    <h5>AirBnB</h5>
+                    <p>
+                        Since there's a lot of cabins in the area, AirBnB got a lot of listenings. This might be a good place to start if you need somewhere to sleep. <a href="https://www.airbnb.se/s/%C3%84ngelsb%C3%A4cksstrand--Sweden/homes?tab_id=home_tab&query=%C3%84ngelsb%C3%A4cksstrand%2C%20Sweden&place_id=ChIJPX37aNGFUUYRdKdtiHf_fQY&checkin=2021-08-13&checkout=2021-08-15&adults=2">AirBnB</a>.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp6">
+                    <h5>Hotels and hostels</h5>
+                    <p>
+                        There's some hotels and hostels in the area, and some that are relatively close to the party is <a href="https://www.hovshallar.com/">Hovs hallar</a> 
+                        and <a href="https://vejbystrandhotel.se/">Vejbystrand</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp6">
+                    <h5>Camper</h5>
+                    <p>
+                        If you're sleeping in a camper then there's a great parking by the ceremony at <a href="https://goo.gl/maps/PxaR3Nfob1CoGt6J9">Vistorps hamn</a>.
+                        If you're only staying friday through sunday, and don't mind some noise, then there's parking by the bygdegård where the dinner will be.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <h3> We hope to see you in august!</h3>
                 <p><span class="fa fa-heart pulse2"></span></p>
             </div>
         </div>
     </div>
 </footer>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
